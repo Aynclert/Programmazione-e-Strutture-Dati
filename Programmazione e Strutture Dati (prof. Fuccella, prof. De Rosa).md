@@ -990,7 +990,3 @@ Per ogni sottoalbero scelto, le proprietà precedenti si propagano.
 		- se l'elemento coincide con la radice, non si fa nulla
 		- se l'elemento è minore della radice, lo inserisce nel sottoalbero sinistro
 		- se l'elemento è maggiore della radice, lo inserisce nel sottoalbero destro
-
-
-
-boh
