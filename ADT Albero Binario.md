@@ -75,5 +75,38 @@
 	- se l'albero binario non è vuoto, puntatore al nodo radice
 
 
-### Dichiarazione del tipo nodo
+### Dichiarazione del tipo Nodo
 ---
+- Per usare un albero binario serve una struttura che rappresenti i nodi
+- La struttura conterrà i dati necessari (un Item) e due puntatori ai sottoalberi:
+
+```C
+struct node{
+	Item value;
+	struct node *left;
+	struct node *right;
+};
+```
+
+
+### Dichiarazione del tipo BTree
+---
+- Il passo successivo è quello di dichiarare il tipo BTree:
+```C
+typedef struct node *BTree;
+```
+
+- Una variabile di tipo BTree punterà al nodo radice dell'albero
+	- Assegnare a T il valore NULL indica che l'albero è inizialmente vuoto:
+```C
+BTree T = NULL;
+```
+
+### Creare un nodo dell'albero
+---
+- Un albero binario viene costruito in maniera bottom-up
+- Man mano che costruiamo l'albero, creiamo dei nuovi nodi da aggiungere come nodo radice
+- I passi per creare un nodo sono:
+	1. Allocare la memoria necessaria
+	2. Memorizzare i dati nel nodo
+	3. Collegare il sottoalbero sinistro e il sottoalbero destro, già costruiti in precedenza.
