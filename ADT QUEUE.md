@@ -5,7 +5,7 @@
 	- si può accedere direttamente solo alla testa (**head**) della lista
 	- non è possibile accedere ad un elemento diverso da **head**, se non dopo aver eliminato tutti gli elementi che lo precedono (cioè quelli inseriti prima).
 
-|
+| Sintas
 
 ## Implementazione con Lista Concatenata
 ---
