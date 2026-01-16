@@ -79,11 +79,11 @@ E' buona norma utilizzare un _**dizionario dei dati**_ da arricchire durante le 
 	- Postcondizione: l'array a in output contiene una permutazione degli elementi dell'array a in input tale che ∀ i ∈ [0, n-2], a[i] <= a[i+1]
 
 
-|Identificatore|Tipo|Descrizione|
-|:--:|:--:|:--:|
-|a|array|array di interi|
-|n|intero|dimensione dell'array|
-|i|intero|indice per individuare gli elementi dell'array|
+| Identificatore |  Tipo  |                  Descrizione                   |
+| :------------: | :----: | :--------------------------------------------: |
+|       a        | array  |                array di interi                 |
+|       n        | intero |             dimensione dell'array              |
+|       i        | intero | indice per individuare gli elementi dell'array |
 
 #### #Progettazione della funzione "ordina_array"
 
