@@ -33,9 +33,9 @@ E' buona norma utilizzare un _**dizionario dei dati**_ da arricchire durante le 
 
 ### Esempio di Analisi per "ordinamento di una sequenza di interi"
 - Dati di ingresso : sequenza s di n interi
-	- Precondizione: n > 0
+	- Pre-condizione: n > 0
 - Dati di uscita: sequenza s1 di n interi
-	- Postcondizione: s1 è una permutazione di s dove ∀ i ∈ [0, n-2], s1 <sub>i</sub>  ≤ s1<sub>i+1</sub>
+	- Post-condizione: s1 è una permutazione di s dove ∀ i ∈ [0, n-2], s1 <sub>i</sub>  ≤ s1<sub>i+1</sub>
 
 |Identificatore|Tipo|Descrizione|
 |:--:|:--:|:--:|
