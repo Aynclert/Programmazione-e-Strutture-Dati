@@ -5,7 +5,13 @@
 	- si può accedere direttamente solo alla testa (**head**) della lista
 	- non è possibile accedere ad un elemento diverso da **head**, se non dopo aver eliminato tutti gli elementi che lo precedono (cioè quelli inseriti prima).
 
-| Sintas
+| Sintattica                                       | Semantica                                                                                    |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Nome del tipo: Queue   Tipi usati: Item, boolean | Dominio: insieme di sequenze S=a1,…,an di tipo Item L’elemento nil rappresenta la coda vuota |
+| newQueue() -> Queue                              | newQueue() → q    -Post: q = nil                                                             |
+| isEmptyQueue(Queue)-> boolean                    | isEmptyQueue(s) -> boolean    -Post: se q=nil allora b=true altrimenti b=false               |
+| enqueue(Queue, Item) -> Queue                    | enqueue(q, e) → q’    -Post:  q = <a1, …, an> AND q’ = <a1, …, an, e>                        |
+| dequeue(Queue) -> Queue                          | dequeue(q) -> q'    -Pre: q = <a1, a2, …, an> n>0   -Post: q’ = <a2, …, an>                  |
 
 ## Implementazione con Lista Concatenata
 ---
