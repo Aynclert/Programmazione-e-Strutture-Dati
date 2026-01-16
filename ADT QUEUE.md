@@ -1,5 +1,5 @@
 
-- Una ***queue ***(***coda***) è una sequenza di elementi di un determinato tipo, in cui gli elementi si aggiungono da un lato (***tail***) e si tolgono dall'altro (***head***)
+- Una ***queue (coda***) è una sequenza di elementi di un determinato tipo, in cui gli elementi si aggiungono da un lato (***tail***) e si tolgono dall'altro (***head***)
 - la sequenza viene gestita con la modalità ***FIFO (First-In-First-Out)***: il primo elemento inserito nella sequenza sarà il primo ad essere eliminato
 - la coda è una struttura dati *lineare* a *dimensione variabile*
 	- si può accedere direttamente solo alla testa (**head**) della lista
@@ -9,7 +9,7 @@
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------- |
 | Nome del tipo: Queue   Tipi usati: Item, boolean | Dominio: insieme di sequenze S=a1,…,an di tipo Item L’elemento nil rappresenta la coda vuota |
 | newQueue() -> Queue                              | newQueue() → q    -Post: q = nil                                                             |
-| isEmptyQueue(Queue)-> boolean                    | isEmptyQueue(s) -> boolean    -Post: se q=nil allora b=true altrimenti b=false               |
+| isEmptyQueue(Queue)-> boolean                    | isEmptyQueue(s) -> b    -Post: se q=nil allora b=true altrimenti b=false                     |
 | enqueue(Queue, Item) -> Queue                    | enqueue(q, e) → q’    -Post:  q = <a1, …, an> AND q’ = <a1, …, an, e>                        |
 | dequeue(Queue) -> Queue                          | dequeue(q) -> q'    -Pre: q = <a1, a2, …, an> n>0   -Post: q’ = <a2, …, an>                  |
 
@@ -67,4 +67,4 @@
 - **Seconda soluzione**: si gestisce l'array in modo circolare
 	- in ogni istante, gli elementi della coda si trovano nel segmento head, head+1,..., tail-1, ma non necessariamente head<=tail
 	- infatti, dopo aver inserito in posizione N-1, se c'è ancora spazio in coda, si inseriscono ulteriori elementi a partire dalla posizione 0
-	- in questo modo si riesce a garantire che ad ogni istante la coda abbia capacità massima di N-1 elementi
+	- in questo modo si riesce a garantire che ad ogni istante la coda abbia capacità massima di N-1 elementi.

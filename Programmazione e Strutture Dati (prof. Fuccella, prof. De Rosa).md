@@ -299,10 +299,11 @@ Dati:
 
 ### Specifica di un ADT
 ---
-| |Sintattica|Semantica|
-|:--:|:--:|:--:|
-|Tipi di dati|||
-|Operatori:per ogni operatore|||
+
+|                                     | Sintattica                                                 | Semantica                                                                                                                                                                             |
+| ----------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipi di dati                        | Nome dell’ADT & Tipi da dati già usati                     | Insieme dei valori                                                                                                                                                                    |
+| Operatori:<br>Per ogni<br>operatore | Nome dell’operatore & Tipi di dati di input e di<br>output | Funzione associata<br>all’operatore<br>• Precondizioni: definiscono<br>quando l’oeratore è<br>applicabile<br>• Postcondizioni: definiscono<br>relazioni tra dati di input e<br>output |
 
 
 

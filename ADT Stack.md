@@ -4,6 +4,15 @@
 	- non è possibile accedere ad un elemento diverso dal primo **se non dopo** aver eliminato tutti gli elementi che lo precedono (inseriti dopo)
 	- lista gestita con la modalità ***LIFO (Last-In-First-Out)*** cioè l'ultimo elemento inserito nella sequenza sarà il primo ad essere eliminato
 
+| Sintattica                                          | Semantica                                                                                    |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Nome del tipo: Stack      Tipi usati: Item, boolean | Dominio: insieme di sequenze S=a1,…,an di tipo Item L’elemento nil rappresenta la pila vuota |
+| newStack() -> Stack                                 | newStack() -> s     -Post: s=nil                                                             |
+| isEmptyStack(Stack) -> boolean                      | isEmptyStack(s) -> b     -Post: se s=nil allora b = true altrimenti b = false                |
+| push(Stack, Item) -> Stack                          | push(s, e) -> s'     -Post: s = <a1, a2, … an> AND s’ = <e, a1, …, an>                       |
+| pop(Stack, Item) -> Stack                           | pop(s) → s’     -Pre: s = <a1, a2, …, an> n>0     -Post: s’ = <a2, …, an>                    |
+| top(Stack) -> Item                                  | top(s) → e     -Pre: s = <a1, a2, …, an> n>0   -Post: e = a1                                 |
+
 ## Implementazione
 ---
 Tra le possibili implementazioni, le più usate sono realizzate tramite:
