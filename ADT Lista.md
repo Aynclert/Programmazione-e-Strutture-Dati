@@ -12,7 +12,10 @@
 | isEmpty(List)-> boolean                    | isEmpty(I)-> b -Post: se l = nil allora b = true altrimenti b = false                                                                                        |
 | addHead(List, Item) -> List                | addHead(l, e)-> I' -Post: l =<a1,a2,...an> AND l' = <e,a1,...,an>                                                                                            |
 | removeHead(List) -> List                   | removeHead(l) ->l' -Pre: l = <a1,a2,..,an> n>0  -Post: l' = <a2,a3,..,an                                                                                     |
-| getFirst(List) -> Item                     | getHead(I) -> e  -Pre: l=<a1,a2,..,an> n>0   -Post: e=a1                                                                                                     |
+| getHead(List) -> Item                      | getHead(I) -> e  -Pre: l=<a1,a2,..,an> n>0   -Post: e=a1                                                                                                     |
+| searchItem(List, Item) → int               | searchItem(l, i) → pos  -Post: se i in l, allora pos = posizione di i in l, else pos = -1                                                                    |
+| removeItem(List, Item) → List              | removeItem(l, e) → l  -Pre: l = <a1, a2, …, e, …, an> n>0   -Post: l’ = l - e                                                                                |
+| removeItem(List, int) → List               | removeItem(l, pos) → l’  -Pre: l = <a1, a2, …, a<sub>pos</sub>, …, an>  &&       1 <= pos <= n    -Post: Post: l’ = l - <a<sub>pos</sub>>                    |
 | insertItem(List, Item, int) -> List        | insertItem(l, e, pos) -> l'  -Pre: l = <a1,...,a<sub>n+1</sub>> & 1<= pos<= n+1  -Post: l = <a1,..,a<sub>pos</sub>,..,a<sub>n+1</sub>> & a<sub>pos</sub> = e |
 | insertTail(List, Item) -> List             | insertTail(l, e) -> l'  -Post: l=<a1,...,an> & l' = <a1,....,an,e>                                                                                           |
 | reverseList(List, Item) -> List            | reverseList(l) -> l'    -Post: l=<a1,a2,...,an> AND l'=<an,...,a2,a1>                                                                                        |

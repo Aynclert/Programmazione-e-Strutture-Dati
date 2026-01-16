@@ -718,6 +718,7 @@ main() {
 }
 ```
 
+
 # Complessità computazionale
 ---
 - **Analisi della complessità**: stima del costo degli algoritmi in termini di risorse di calcolo (tempo, spazio di memoria)
@@ -918,10 +919,8 @@ int ricercaBin(int v[], int size, int k)
 - Eseguiamo un numero costante di confronti per ogni iterazione. Il numero massimo di confronti sarà:
 ***f(n) = O(log n)***
 
-
 # ADT #Albero_Binario
 ---
-
 ## I grafi
 ---
 - Un grafo orientato G è una coppia <N,A>, dove:
@@ -936,7 +935,6 @@ int ricercaBin(int v[], int size, int k)
 	- partizioni successive di un insieme in sottoinsiemi disgiunti
 	- procedimenti decisionali enumerativi
 
-
 ### Proprietà
 ---
 - Ogni nodo ha un unico arco entrante, tranne la radice, che non ha archi entranti;
@@ -945,19 +943,40 @@ int ricercaBin(int v[], int size, int k)
 - Un arco nell'albero induce una relazione padre-figlio
 - A ciascun nodo è solitamente associato un valore, detto *etichetta* del nodo
 
-
 ## Concetti
 ---
 - **Grado di un nodo**: numero di figli del nodo
 	- **ordine dell'albero**: grado max fra tutti i nodi
 - **Cammino**: sequenza di nodi dove il nodo <sub>i</sub> è padre del nodo n<sub>i+1</sub>, per 0<=i e minore di k
 	- la lunghezza del cammino è k 
-- **Livello di un nodo**:
-	- 
-- **Altezza dell'albero**:
-	- parte dalla radice e 
+- **Livello di un nodo**: lunghezza del cammino dalla radice del nodo
+	- Definizione ricorsiva: il livello della radice è 0, il livello di un nodo non radice è 1+livello del padre
+- **Altezza dell'albero**: la lunghezza del più lungo cammino nell'albero
+	- parte dalla radice e termina in una foglia
 
-# ADT Alberi binari di ricerca
+## Alberi come Struttura Ricorsiva
+---
+- Un albero è un insieme di nodi ai quali sono associate delle informazioni
+- Tra i nodi esiste un nodo particolare che è la radice (livello 0)
+- Gli altri nodi sono partizionati in sottoinsiemi che sono a loro volta alberi (livelli successivi):
+	- Vuoto o costituito da un solo nodo (detto radice)
+	- Radice a cui sono connessi altri alberi
+
+## Alberi Binari
+---
+- Particolari alberi n-ari: ogni nodo può avere al più 2 figli
+	- sottoalbero sinistro e sottoalbero destro
+- Definizione ricorsiva:
+	- un albero binario è vuoto
+	- un albero binario è una terna (s, r, d), dove r è un nodo (radice), s e d sono alberi binari
+- Alberi binari semplificati
+	- Costruzione bottom-up
+	- Operatori di selezione
+	- Operatori di visita
+
+
+
+# ADT #Alberi_binari_di_ricerca
 ---
 ## Definizione:
 ---
